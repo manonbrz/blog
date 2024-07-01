@@ -5,8 +5,8 @@ $abril: 'Abril Fatface', serif;
 $serif: 'Playfair Display', serif;
 
 $white: #ffffff;
-$main: #92BFB1;
-$dark: #333333;
+$main: #dcc8a8;
+$dark: #cfb387;
 
 $ease-slow: all .4s ease-out;
 
@@ -109,12 +109,13 @@ a {
   opacity: 0;
 }
 
-section {
+#section1 {
   height: 100vh;
   width: 100%;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  padding-left: 15%;
+  align-items: flex-start;
+  padding-top: 15%;
   flex-direction: column;
 }
 
