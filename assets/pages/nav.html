@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BLOG</title>
+    <link rel="stylesheet" href="/assets/css/nav.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="navbar--container sticky">
+      <div class="navbar--title"><h4>LE BARAZER MANON</h4></div>
+      <div class="navbar--icon"><i class="fas fa-bars"></i></div>
+    </div>
+    <div class="nav--open close sticky">
+      <div class="nav--open-icon"><i class="fas fa-times"></i></div>
+      <div class="nav--open-title">le barazer manon</div>
+      <div class="nav--open-menu">
+        <a href="">à propos</a>
+        <a href="">articles</a>
+        <a href="">entreprise</a>
+        <a href="">contact</a>
+      </div>
+    </div>
+
+    <section>
+      <h1>Hi, my name is <br /><span>Julie.</span></h1>
+    </section>
+    <section class="two">
+      <h1>I'm a <span>front-end</span><br />engineer.</h1>
+    </section>
+    <section class="three">
+      <h1>
+        I like to <br /><span class="light">design + code</span><br />
+        pretty things.
+      </h1>
+    </section>
+    <section class="four">
+      <h1>
+        you can <br />follow me on <br /><a
+          class="underline"
+          target="_blank"
+          href="https://instagram.com/hercodehaus"
+          >instagram</a
+        ><br />
+        or
+        <a
+          class="underline"
+          target="_blank"
+          href="https://twitter.com/juliepark"
+          >twitter.</a
+        >
+      </h1>
+    </section>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        let open = document.querySelector(".navbar--icon");
+        let menu = document.querySelector(".nav--open");
+        let close = document.querySelector(".nav--open-icon");
+
+        open.addEventListener("click", function () {
+          menu.classList.toggle("close");
+        });
+
+        close.addEventListener("click", function () {
+          menu.classList.toggle("close");
+        });
+      });
+    </script>
+  </body>
+</html>
