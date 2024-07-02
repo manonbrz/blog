@@ -4,7 +4,7 @@ body {
   background: #ebdfcc;
 }
 
-#section1 {
+.section1 {
   height: 80vh;
   padding-top: 15%;
   display: flex;
