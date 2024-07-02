@@ -7,6 +7,7 @@ $serif: 'Playfair Display', serif;
 $white: #ffffff;
 $main: #dcc8a8;
 $dark: #cfb387;
+$hover: #bc9d6b;
 
 $ease-slow: all .4s ease-out;
 
@@ -15,3 +16,83 @@ body {
   background: lighten($main, 10%);
 }
 
+/* modif sur toutes les sections */
+section {
+  height: 70vh;
+  padding: 10%;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+/* modif seulement sur la première section */
+.one{ 
+  background: darken($main, 1%);
+  display: flex;
+  flex-direction: row;
+}
+
+/* parti à gauche (nom/info) */
+.left { 
+  padding-top: 5%;
+  width: 50%;
+}
+
+/* parti à droite (cv/téléchargement) */
+.right {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+button {
+  font-family: "Playfair Display", serif;
+  font-size: 0.8em;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: $dark;
+  border: none;
+  border-radius: 20px;
+  padding: 5%;
+  width: 300px;
+}
+button:hover {
+  cursor: pointer;
+  background-color: $hover;
+}
+
+.download {
+  width: 20px;
+  padding-right: 4%;
+}
+.section-cv {
+  padding-top: 5%;
+}
+
+.imgCV {
+  width: 450px;
+  height: 650px;
+}
+
+
+/* affichage titre */
+h1 {
+  font-family: $abril;
+  margin: 0;
+  line-height: 1em;
+  font-weight: 100;
+  color: #ffffff;
+  font-size: 3.5em;
+}
+h1 span {
+  font-style: italic;
+  text-decoration: underline;
+  color: #cdb184;
+}

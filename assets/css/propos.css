@@ -1,5 +1,97 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css?family=Abril+Fatface|Oswald:200,400|Playfair+Display:400,400i");
 body {
   margin: 0;
   background: #ebdfcc;
+}
+
+/* modif sur toutes les sections */
+section {
+  height: 70vh;
+  padding: 10%;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+/* modif seulement sur la première section */
+.one {
+  background: #dbc6a4;
+  display: flex;
+  flex-direction: row;
+}
+
+/* parti à gauche (nom/info) */
+.left {
+  padding-top: 5%;
+  width: 50%;
+}
+
+/* parti à droite (cv/téléchargement) */
+.right {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+button {
+  font-family: "Playfair Display", serif;
+  font-size: 0.8em;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #cfb387;
+  border: none;
+  border-radius: 20px;
+  padding: 5%;
+  width: 300px;
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: #bc9d6b;
+}
+
+.download {
+  width: 20px;
+  padding-right: 4%;
+}
+
+.section-cv {
+  padding-top: 2%;
+}
+
+.imgCV {
+  width: 450px;
+  height: 650px;
+}
+
+/* affichage titre */
+h1 {
+  font-family: "Abril Fatface", serif;
+  margin: 0;
+  line-height: 1em;
+  font-weight: 100;
+  color: #ffffff;
+  font-size: 3.5em;
+}
+
+h1 span {
+  font-style: italic;
+  color: #cdb184;
+}
+
+h2 {
+  font-family: "Oswald", sans-serif;
+  color:#bc9d6b;
+  font-weight: 100;
+}
+h2 span {
+  font-size: italic;
+  color: #ffffff;
+  font-weight: 200;
 }
