@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css?family=Abril+Fatface|Oswald:200,400|Playfair+Display:400,400i');
+
+$bold: 'Oswald', sans-serif;
+$abril: 'Abril Fatface', serif;
+$serif: 'Playfair Display', serif;
+
+$white: #ffffff;
+$main: #dcc8a8;
+$dark: #cfb387;
+
+$ease-slow: all .4s ease-out;
+
+body {
+  margin: 0;
+  background: lighten($main, 10%);
+}
+

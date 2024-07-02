@@ -1,3 +1,4 @@
+// assets/scss/nav.scss
 @import url('https://fonts.googleapis.com/css?family=Abril+Fatface|Oswald:200,400|Playfair+Display:400,400i');
 
 $bold: 'Oswald', sans-serif;
@@ -10,9 +11,9 @@ $dark: #cfb387;
 
 $ease-slow: all .4s ease-out;
 
-body {
-  margin: 0;
-  background: lighten($main, 10%);
+.sticky {
+  position: fixed;
+  z-index: 10;
 }
 
 a {
@@ -24,10 +25,6 @@ a {
   }
 }
 
-.sticky {
-  position: fixed;
-  z-index: 10;
-}
 .navbar--container {
   top: 15%;
   background: $white;
@@ -35,6 +32,7 @@ a {
   width: 90px;
   box-shadow: 2px 2px 15px rgba($dark, .1);
 }
+
 .navbar--icon {
   margin-top: 24px;
   margin-left: 49px;
@@ -44,6 +42,7 @@ a {
     cursor: pointer;
   }
 }
+
 .navbar--title {
   margin-left: 27px;
   margin-top: 35px;
@@ -107,43 +106,4 @@ a {
   transform: translateX(-300px);
   transition: $ease-slow;
   opacity: 0;
-}
-
-#section1 {
-  height: 80vh;
-  margin-top: 15%;
-  display: flex;
-  margin-left: 15%;
-  align-items: flex-start;
-  flex-direction: column;
-}
-
-.two {
-  background: darken($main, 1%);
-}
-
-.three {
-  background: darken($main, 10%);
-}
-
-h1 {
-  font-family: $abril;
-  margin: 0;
-  line-height: 1em;
-  font-weight: 100;
-  color: $white;
-  font-size: 3.5em;
-  span {
-    font-style: italic;
-    text-decoration: underline;
-    color: darken($main, 10%);
-  }
-}
-
-.light {
-  color: lighten($main, 10%);
-}
-
-.underline {
-  text-decoration: underline;
 }
