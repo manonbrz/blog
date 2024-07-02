@@ -7,8 +7,7 @@ body {
 
 /* modif sur toutes les sections */
 section {
-  height: 70vh;
-  padding: 10%;
+  height: 90vh;
   display: flex;
   align-items: flex-start;
   flex-direction: column;
@@ -18,13 +17,24 @@ section {
 .one {
   background: #dbc6a4;
   display: flex;
+  padding-top: 5%;
+  padding-right: 5%;
+  padding-left: 10%;
+  justify-content: flex-end;
+}
+
+.separate-one {
+  display: flex;
   flex-direction: row;
 }
 
 /* parti à gauche (nom/info) */
 .left {
-  padding-top: 5%;
-  width: 50%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 45%;
+  height: 100%;
 }
 
 /* parti à droite (cv/téléchargement) */
@@ -68,6 +78,7 @@ button:hover {
 .imgCV {
   width: 450px;
   height: 650px;
+  border-radius: 10px;
 }
 
 /* affichage titre */
@@ -82,16 +93,93 @@ h1 {
 
 h1 span {
   font-style: italic;
+  text-decoration: underline;
   color: #cdb184;
 }
 
 h2 {
+  font-size: 32px;
   font-family: "Oswald", sans-serif;
-  color:#bc9d6b;
+  color: #bc9d6b;
   font-weight: 100;
 }
+
 h2 span {
   font-size: italic;
-  color: #ffffff;
+  color: #f4ebde;
   font-weight: 200;
+}
+
+.gl {
+  color: #f4ebde;
+  font-style: italic;
+}
+
+/* SECONDE PARTIE */
+.two {
+  padding: 5%;
+  padding-left: 10%;
+  width: 50%;
+}
+
+
+.experience {
+  margin-top: 5%;
+  display: flex;
+  font-family: "Oswald", sans-serif;
+}
+
+.date {
+  margin-right: 30px;
+  margin-top: 5px;
+  opacity: 0.5;
+  width: 180px;
+  font-weight: 300;
+}
+
+.title {
+  font-size: 20px;
+  font-style: italic;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+}
+
+.description {
+  font-weight: 350;
+  font-size: 20px;
+}
+
+#twothree {
+  display: flex;
+  flex-direction: row;
+}
+
+.three {
+  display: flex;
+  justify-content: center;
+  width: 50%;
+}
+
+.onebis{
+  cursor: pointer;
+  margin-top: 50px;
+  height: 100%;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  font-family: "Oswald", sans-serif;
+  opacity: 0.7;
+}
+.onebis:hover {
+  opacity: 1;
+}
+
+.arrow{
+  margin: 2px;
+  width: 30px;
+  height: 30px;
 }
