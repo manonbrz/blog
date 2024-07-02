@@ -1,17 +1,91 @@
+/* Import des polices */
+@import url('https://fonts.googleapis.com/css?family=DM+Sans:400,500,700&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Abril+Fatface|Oswald:200,400|Playfair+Display:400,400i');
 
-$bold: 'Oswald', sans-serif;
-$abril: 'Abril Fatface', serif;
-$serif: 'Playfair Display', serif;
-
+/* Variables de couleur */
 $white: #ffffff;
 $main: #dcc8a8;
 $dark: #cfb387;
 
-$ease-slow: all .4s ease-out;
-
+/* Style global */
 body {
   margin: 0;
   background: lighten($main, 10%);
 }
 
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.carousel {
+  position: relative;
+  width: 80%;
+  max-width: 800px;
+}
+
+.cards {
+  display: flex;
+  overflow-x: hidden;
+}
+
+.card {
+  flex: 0 0 33.33%; /* Affichage de 3 cartes à la fois */
+  transition: transform 0.4s ease;
+  position: relative;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.info {
+  background-color: $white;
+  padding: 10px;
+  border-radius: 8px;
+  margin-top: 10px;
+}
+
+.title {
+  font-family: "Oswald", sans-serif;
+  letter-spacing: 0.34em;
+  text-transform: uppercase;
+  font-size: 0.9em;
+  margin-bottom: 5px;
+}
+
+.sub-line {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.subtitle, .time {
+  font-size: 12px;
+  color: $dark; /* Couleur du texte */
+}
+
+/* Boutons de navigation */
+.prev-button, .next-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: $white;
+  border: none;
+  outline: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  z-index: 1; /* S'assurer que les boutons sont au-dessus des cartes */
+}
+
+.prev-button {
+  left: 10px;
+}
+
+.next-button {
+  right: 10px;
+}
