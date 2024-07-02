@@ -15,20 +15,6 @@ body {
   background: lighten($main, 10%);
 }
 
-a {
-  text-decoration: none;
-  color: $main;
-  &:hover {
-    background: $main;
-    color: $dark;
-  }
-}
-
-.sticky {
-  position: fixed;
-  z-index: 10;
-}
-
 
 #section1 {
   height: 80vh;

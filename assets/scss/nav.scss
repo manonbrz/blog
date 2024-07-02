@@ -16,6 +16,15 @@ $ease-slow: all .4s ease-out;
   z-index: 10;
 }
 
+a {
+  text-decoration: none;
+  color: $main;
+  &:hover {
+    background: $main;
+    color: $dark;
+  }
+}
+
 .navbar--container {
   top: 15%;
   background: $white;
