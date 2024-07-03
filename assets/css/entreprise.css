@@ -2,6 +2,7 @@
 body {
   margin: 0;
   background: #ebdfcc;
+  padding-top: 50px;
 } 
 
 .container-title{
@@ -44,17 +45,91 @@ h1 {
 
 .container-text {
   display: flex;
-  align-items: center;
+  flex-direction: column;
   width: 50%;
-  padding: 0px 50px 0px 120px;
+  padding: 0px 0px 0px 120px;
   font-family: "Oswald", sans-serif;
   font-weight: 100;
   font-size: 30px;
 }
+.offres {
+  display: flex;
+  justify-content: center;
+}
 
+.offre {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  margin : 20px;
+  width: 33.3%;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  background-color: #e6d3b4;
+}
+
+.toggle-info {
+  background: none;
+  border: none;
+  cursor: pointer;
+  margin-right: 10px; /* Espacement entre la flèche et le titre */
+}
+.toggle-info img {
+  transition: transform 0.3s ease; /* Transition pour la rotation de la flèche */
+}
+
+.offre-content {
+  flex: 1;
+  transition: max-height 0.5s ease;
+}
+
+.offre-content h3 {
+  margin: 0;
+  font-family: "Abril Fatface", serif;
+  font-size: 20px;
+  font-weight: 200;
+
+}
+
+.more-info {
+  display: none;
+  padding: 10px;
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+.more-info.active {
+  display: block;
+}
+
+.offre.active .more-info {
+  display: block;
+}
+
+
+.offre button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+.fleche {
+  width: 25px;
+}
+
+.container-separate {
+  display: flex;
+  padding-top: 50px;
+  justify-content: center;
+}
+.separate {
+  width: 80%;
+  height: 1px;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgb(95, 95, 95) 30%, rgba(0, 0, 0, 0) 100%);
+}
 .card img {
   width: 60%;
   border-radius: 8px;
+  height: 300.47px;
 }
 .twocard{
   display: flex;
