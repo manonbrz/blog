@@ -13,21 +13,34 @@
   </head>
     <body>
       <div id="nav-placeholder"></div>
-      <div class="contact-form">
-        <h2>Contactez-moi</h2>
-        <form action="/assets/php/contact.php" method="POST">
-          <label for="name">NOM</label>
-          <input type="text" id="name" name="name" required>
-          
-          <label for="email">E-MAIL</label>
-          <input type="email" id="email" name="email" required>
-          
-          <label for="message">MESSAGE</label>
-          <textarea id="message" name="message" required></textarea>
-          
-          <button type="submit">Envoyer</button>
-        </form>
+      <div class="container">
+        <div class="contact-form">
+          <h2>CONTACTEZ-MOI</h2>
+          <form action="/assets/php/contact.php" method="POST">
+            <div class="twoinput">
+  
+              <div class="inputs">
+                <label for="name">NOM</label>
+                <input type="text" id="name" name="name" required>
+              </div>
+              <div class="inputs">
+                <label for="email">E-MAIL</label>
+                <input type="email" id="email" name="email" required>
+              </div>
+            </div>
+            
+            <div class="input">
+              <label for="message">MESSAGE</label>
+              <textarea id="message" name="message" required></textarea>
+              
+            </div>
+            <div class="button">
 
+              <button type="submit">Envoyer</button>
+            </div>
+          </form>
+          </div>
+      </div>
       <script src="/assets/js/nav.js"></script>
     </body>
 </html>
