@@ -160,8 +160,55 @@ h1 {
 .twocard2{
   padding-top: 30px;
   display: flex;
-  padding-bottom: 100px
 }
 .twocard2 .card {
   align-items: flex-end;
+}
+.visit{
+  
+  font-family: "Oswald", sans-serif;
+  color: #000000;
+  font-weight: 100;
+}
+
+/* HISTOIRE */
+
+.histoires {
+  display: flex;
+  flex-direction: column;
+  font-family: "Oswald", sans-serif;
+  margin-top: 50px;
+
+  margin-bottom: 500px;
+
+}
+
+.histoire {
+  display: flex;
+  /* align-items: center; */
+  margin-bottom: 20px;
+}
+
+.date {
+  margin-top: 10px;
+  width: 150px;
+  opacity: 0.9;
+  font-weight: 300;
+  font-size: 16px;
+}
+.info {
+  font-weight: 350;
+  font-size: 25px;
+  width: 50%;
+}
+
+.histoire a {
+  color: black;
+  opacity: 0.7;
+}
+
+.histoire a:hover {
+  color: black;
+  opacity: 1;
+  background: none;
 }
