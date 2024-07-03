@@ -6,7 +6,7 @@ const prevButton = document.querySelector('.prev-button');
 const nextButton = document.querySelector('.next-button');
 
 // Nombre de cartes à afficher à la fois
-const cardWidth = card[0].offsetWidth;
+const cardWidth = card[0].offsetWidth + 20; // +20 pour tenir compte des marges
 const visibleCards = 3;
 let currentSlide = 0;
 
@@ -19,16 +19,20 @@ const showCards = () => {
 nextButton.addEventListener('click', () => {
   if (currentSlide < card.length - visibleCards) {
     currentSlide++;
-    showCards();
+  } else {
+    currentSlide = 0; // Retourner au début pour l'effet de carousel infini
   }
+  showCards();
 });
 
 // Bouton précédent
 prevButton.addEventListener('click', () => {
   if (currentSlide > 0) {
     currentSlide--;
-    showCards();
+  } else {
+    currentSlide = card.length - visibleCards; // Aller à la fin pour l'effet de carousel infini
   }
+  showCards();
 });
 
 // Appel initial de la fonction pour afficher les cartes
