@@ -15,3 +15,17 @@ body {
   background: lighten($main, 10%);
 }
 
+h1 {
+  font-family: $abril;
+  margin: 0;
+  line-height: 1em;
+  font-weight: 100;
+  color: $white;
+  font-size: 3.5em;
+  span {
+    font-style: italic;
+    text-decoration: underline;
+    color: darken($main, 10%);
+  }
+}
+
