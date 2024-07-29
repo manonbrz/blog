@@ -3,10 +3,12 @@ body {
   margin: 0;
   background: #ebdfcc;
   padding-top: 50px;
+  height: auto;
 } 
 
 .container-title{
   padding: 50px 150px 0px 150px;
+  display: flex;
 }
 h2 {
   font-family: "Oswald", sans-serif;
@@ -26,6 +28,15 @@ h1 {
 .container {
   display: flex;
 }
+.container-logo {
+  display: flex;
+  align-items: center;
+  padding-right: 20px;
+}
+
+.container-logo img {
+  width: 100px;
+}
 
 .container-image {
   font-weight: 200;
@@ -36,13 +47,21 @@ h1 {
   display: flex;
   letter-spacing: 0.05em;
   align-items: center;
-
+  
   justify-content: center;
 }
-.container-image img {
+.container-image iframe {
+  border-radius: 0.2rem;
+  height: 350px;
+  width: 50%;
+}
+.container-image p {
   width: 50%;
 }
 
+.container-image p span {
+  font-weight:500;
+}
 .container-text {
   display: flex;
   flex-direction: column;
@@ -211,4 +230,24 @@ h1 {
   color: black;
   opacity: 1;
   background: none;
+}
+
+/* Styles pour l'élément copiable */
+.copiable {
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  padding: 5px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.copiable:hover {
+  font-weight: 400;
+}
+
+.copiable .copy-icon {
+  margin-left: 10px;
+  font-size: 1.2em;
+  color: #666;
 }
