@@ -1,0 +1,44 @@
+@import url("https://fonts.googleapis.com/css?family=Abril+Fatface|Oswald:200,400|Playfair+Display:400,400i");
+body {
+  margin: 0;
+  background: #ebdfcc;
+}
+
+.section1 {
+  height: 80vh;
+  padding-top: 15%;
+  display: flex;
+  margin-left: 15%;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.two {
+  background: #dbc6a4;
+}
+
+.three {
+  background: #cdb184;
+}
+
+h1 {
+  font-family: "Abril Fatface", serif;
+  margin: 0;
+  line-height: 1em;
+  font-weight: 100;
+  color: #ffffff;
+  font-size: 3.5em;
+}
+h1 span {
+  font-style: italic;
+  text-decoration: underline;
+  color: #cdb184;
+}
+
+.light {
+  color: #ebdfcc;
+}
+
+.underline {
+  text-decoration: underline;
+}

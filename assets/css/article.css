@@ -1,0 +1,180 @@
+@charset "UTF-8";
+/* Import des polices */
+@import url("https://fonts.googleapis.com/css?family=DM+Sans:400,500,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Abril+Fatface|Oswald:200,400|Playfair+Display:400,400i");
+@import url("https://fonts.googleapis.com/css?family=Abril+Fatface|Oswald:200,400|Playfair+Display:400,400i");
+/* Variables de couleur */
+/* Style global */
+body {
+  margin: 0;
+  background: #ebdfcc;
+  font-family: "Kodchasan", sans-serif;
+}
+
+h1 {
+  font-family: "Abril Fatface", serif;
+  margin: 0;
+  line-height: 1em;
+  font-weight: 100;
+  color: #ffffff;
+  font-size: 3.5em;
+}
+
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 50px;
+}
+
+.carousel {
+  position: relative;
+  width: 80%;
+  padding-top: 200px;
+  overflow: hidden;
+}
+
+.cards {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.card {
+  flex: 0 0 33.33%; /* Chaque carte prend 33.33% de la largeur */
+  margin: 0 10px;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.card:hover {
+  cursor: pointer;
+}
+
+.card img {
+  width: 100%;
+  height: 280px;
+  display: block;
+}
+
+.info {
+  padding: 10px;
+  background-color: #fff;
+}
+
+.title {
+  font-size: 1.2em;
+  color: #403d40;
+}
+
+.sub-line {
+  display: flex;
+  justify-content: space-between;
+  color: #999;
+  font-size: 0.9em;
+  margin-top: 5px;
+}
+
+.subtitle, .time {
+  flex: 1;
+}
+
+.time {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.nav-buttons img {
+  width: 80px;
+}
+
+.nav-buttons {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  z-index: 2;
+  transform: translateY(-50%);
+}
+
+.prev-button, .next-button {
+  background: none; /* Pas de background */
+  border: none;
+  cursor: pointer;
+  padding: 0; /* Supprimer le padding */
+}
+
+.prev-button {
+  position: absolute;
+  left: -10px;
+  top: 50px;
+}
+
+.next-button {
+  position: absolute;
+  right: -10px;
+  top: 50px;
+}
+
+.prev-button:hover img, .next-button:hover img {
+  opacity: 0.8;
+}
+
+.rotate-180 {
+  transform: rotate(180deg);
+}
+
+/* Styles pour la popup */
+.popup {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.popup-content {
+  background-color: #fefefe;
+  margin: 10% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 50%;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  position: relative;
+  animation: fadeIn 0.3s;
+}
+
+.popup-content img {
+  width: 100%;
+  height: auto;
+}
+
+.popup-content h2,
+.popup-content h3,
+.popup-content p {
+  margin: 15px 0;
+}
+
+.close {
+  font-size: 28px;
+  font-weight: bold;
+  z-index: 1001; /* Ajout du z-index */
+  opacity: 1 !important;
+}  
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+
