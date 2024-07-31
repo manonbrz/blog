@@ -4,15 +4,31 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>propos</title>
-    <link rel="stylesheet" href="../css/propos.css" />
-    <link rel="stylesheet" href="../css/nav.css" />
+    <link rel="stylesheet" href="/assets/css/propos.css" />
+    <link rel="stylesheet" href="/assets/css/nav.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
     />
   </head>
     <body>
-      <div id="nav-placeholder"></div>
+      <div id="nav-placeholder">
+        <div class="navbar--container sticky">
+          <div class="navbar--title"><h4>LE BARAZER MANON</h4></div>
+          <div class="navbar--icon"><i class="fas fa-bars"></i></div>
+        </div>
+        <div class="nav--open close sticky">
+          <div class="nav--open-icon"><i class="fas fa-times"></i></div>
+          <div class="nav--open-title">le barazer manon</div>
+          <div class="nav--open-menu">          
+            <a href="/index.html">home</a>
+            <a href="/pages/propos.html">à propos</a>
+            <a href="/pages/article.html">articles</a>
+            <a href="/pages/entreprise.html">entreprise</a>
+            <a href="/pages/contact.html">contact</a>
+          </div>
+        </div>
+      </div>
       <section class="one">
         <div class="separate-one">
           <div class="left">
@@ -30,11 +46,11 @@
               >GL Events</a>. <br> Ce stage se poursuivra en <span>alternance</span> à la rentrée 2024, pour une durée de <span>3ans</span>.</h2>
           </div>
           <div class="right">
-            <img class="imgCV" src="../img/CV-LEBARAZER.Manon.jpg" alt="CV">
+            <img class="imgCV" src="/assets/img/CV-LEBARAZER.Manon.jpg" alt="CV">
             <div class="section-cv">
-              <a href="../img/CV-LEBARAZER.Manon.pdf">
+              <a href="/assets/img/CV-LEBARAZER.Manon.pdf">
                 <button type="button">
-                  <img class="download" src="../img/download.png">
+                  <img class="download" src="/assets/img/download.png">
                   Télécharger mon CV :)
                 </button>
               </a>
@@ -42,9 +58,9 @@
           </div>
         </div>
         <div class="onebis">
-          <img class="arrow" src="../img/arrow.png">
+          <img class="arrow" src="/assets/img/arrow.png">
           MON PARCOURS JUSTE ICI
-          <img class="arrow" src="../img/arrow.png">
+          <img class="arrow" src="/assets/img/arrow.png">
         </div>
       </section>
       <section id="twothree">
@@ -122,7 +138,7 @@
             >github.</a
             >
           </h1>
-      <script src="../js/propos.js"></script>
-      <script src="../js/nav.js"></script>
+      <script src="/assets/js/propos.js"></script>
+      <script src="/assets/js/nav.js"></script>
     </body>
 </html>

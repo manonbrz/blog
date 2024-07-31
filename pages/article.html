@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Articles</title>
-    <link rel="stylesheet" href="../css/article.css" />
-    <link rel="stylesheet" href="../css/nav.css" />
+    <link rel="stylesheet" href="/assets/css/article.css" />
+    <link rel="stylesheet" href="/assets/css/nav.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
@@ -16,13 +16,30 @@
     />
   </head>
   <body>
-    <div id="nav-placeholder"></div>
+    <div id="nav-placeholder">
+      <div class="navbar--container sticky">
+        <div class="navbar--title"><h4>LE BARAZER MANON</h4></div>
+        <div class="navbar--icon"><i class="fas fa-bars"></i></div>
+      </div>
+      <div class="nav--open close sticky">
+        <div class="nav--open-icon"><i class="fas fa-times"></i></div>
+        <div class="nav--open-title">le barazer manon</div>
+        <div class="nav--open-menu">
+          <a href="/index.html">home</a>
+          <a href="/pages/propos.html">à propos</a>
+          <a href="/pages/article.html">articles</a>
+          <a href="/pages/entreprise.html">entreprise</a>
+          <a href="/pages/contact.html">contact</a>
+        </div>
+      </div>
+    </div>
+
     <section>
       <h1>Articles</h1>
       <div class="carousel">
         <div class="cards">
           <div class="card">
-            <img src="../img/gl.jpg" alt="GL Events" />
+            <img src="/assets/img/gl.jpg" alt="GL Events" />
             <div class="info">
               <div class="title">MON INTEGRATION</div>
               <div class="sub-line">
@@ -53,7 +70,7 @@
             </div>
           </div>
           <div class="card">
-            <img src="../img/argocd.png" alt="GL Events" />
+            <img src="/assets/img/argocd.png" alt="GL Events" />
             <div class="info">
               <div class="title">LES LIVRAISONS</div>
               <div class="sub-line">
@@ -77,7 +94,7 @@
             </div>
           </div>
           <div class="card">
-            <img src="../img/seminaire.png" alt="GL Events" />
+            <img src="/assets/img/seminaire.png" alt="GL Events" />
             <div class="info">
               <div class="title">LE SEMINAIRE</div>
               <div class="sub-line">
@@ -119,7 +136,7 @@
             </div>
           </div>
           <div class="card">
-            <img src="../img/gl.jpg" alt="GL Events" />
+            <img src="/assets/img/gl.jpg" alt="GL Events" />
             <div class="info">
               <div class="title">MON INTEGRATION</div>
               <div class="sub-line">
@@ -132,7 +149,7 @@
             </div>
           </div>
           <div class="card">
-            <img src="../img/gl.jpg" alt="GL Events" />
+            <img src="/assets/img/gl.jpg" alt="GL Events" />
             <div class="info">
               <div class="title">MON INTEGRATION</div>
               <div class="sub-line">
@@ -147,10 +164,14 @@
         </div>
         <div class="nav-buttons">
           <button class="prev-button">
-            <img src="../img/left-arrow.png" />
+            <img src="/assets/img/left-arrow.png" />
           </button>
           <button class="next-button">
-            <img src="../img/left-arrow.png" alt="Next" class="rotate-180" />
+            <img
+              src="/assets/img/left-arrow.png"
+              alt="Next"
+              class="rotate-180"
+            />
           </button>
         </div>
       </div>
@@ -168,8 +189,8 @@
       </div>
     </div>
 
-    <script src="../js/nav.js"></script>
-    <script src="../js/carousel.js"></script>
-    <script src="../js/popup.js"></script>
+    <script src="/assets/js/nav.js"></script>
+    <script src="/assets/js/carousel.js"></script>
+    <script src="/assets/js/popup.js"></script>
   </body>
 </html>
