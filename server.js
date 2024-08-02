@@ -24,29 +24,53 @@ client.once('ready', () => {
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
-// Servir les fichiers statiques à partir du répertoire 'pages'
-app.use(express.static(path.join(__dirname, 'pages')));
-app.use(express.static(path.join(__dirname, 'assets')));
+// Configuration pour servir les fichiers statiques
+app.use('/assets', express.static(path.join(__dirname, 'assets')));
+
+// Routes spécifiques pour les pages
+app.get('/', (req, res) => {
+    res.sendFile(path.join(__dirname, 'pages', 'index.html'));
+});
+
+app.get('/home', (req, res) => {
+    res.sendFile(path.join(__dirname, 'index.html'));
+});
+
+app.get('/propos', (req, res) => {
+    res.sendFile(path.join(__dirname, 'pages', 'propos.html'));
+});
+
+app.get('/article', (req, res) => {
+    res.sendFile(path.join(__dirname, 'pages', 'article.html'));
+});
+
+app.get('/entreprise', (req, res) => {
+    res.sendFile(path.join(__dirname, 'pages', 'entreprise.html'));
+});
+
+app.get('/contact', (req, res) => {
+    res.sendFile(path.join(__dirname, 'pages', 'contact.html'));
+});
 
 // Route pour recevoir les données du formulaire
 app.post('/contact', async (req, res) => {
     const { name, email, message } = req.body;
 
     if (!name || !email || !message) {
-        return res.redirect('/contact.html?error=invalid_request');
+        return res.redirect('/contact?error=invalid_request');
     }
 
     try {
         const channel = await client.channels.fetch(CHANNEL_ID);
         if (channel) {
             await channel.send(`Nom: ${name}\nEmail: ${email}\nMessage: ${message}`);
-            return res.redirect('/contact.html?success=true');
+            return res.redirect('/contact?success=true');
         } else {
-            return res.redirect('/contact.html?error=channel_not_found');
+            return res.redirect('/contact?error=channel_not_found');
         }
     } catch (error) {
         console.error('Failed to send message:', error);
-        return res.redirect('/contact.html?error=email_failed');
+        return res.redirect('/contact?error=email_failed');
     }
 });
 
