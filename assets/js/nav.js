@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", function () {
       <a href="${pathToPages}/propos.html">à propos</a>
       <a href="${pathToPages}/article.html">articles</a>
       <a href="${pathToPages}/entreprise.html">entreprise</a>
-      <a href="${pathToPages}/article.html">contact</a>
+      <a href="${pathToPages}/contact.html">contact</a>
     </div>
   </div>`;
 
