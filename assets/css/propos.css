@@ -184,6 +184,13 @@ h2 span {
   height: 30px;
 }
 
+.object-contain {
+  -o-object-fit: contain;
+  object-fit: contain;
+  -o-object-position: center;
+  object-position: center;
+}
+
 @media screen and (max-width : 950px) {
   .left {
     width: 90%;

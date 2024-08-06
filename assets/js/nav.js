@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
   const homepagePath = window.location.pathname === '/' ? '' : '../';
-  const pathToPages = window.location.pathname.includes('/pages/') ? '' : 'pages';
+  const pathToPages = window.location.pathname.includes('/pages/') ? '' : 'pages/';
 
   const navHtml = `<div class="navbar--container sticky">
     <div class="navbar--title"><h4>LE BARAZER MANON</h4></div>
@@ -11,10 +11,10 @@ document.addEventListener("DOMContentLoaded", function () {
     <div class="nav--open-title">le barazer manon</div>
     <div class="nav--open-menu">
       <a href="${homepagePath}index.html">home</a>
-      <a href="${pathToPages}/propos.html">à propos</a>
-      <a href="${pathToPages}/article.html">articles</a>
-      <a href="${pathToPages}/entreprise.html">entreprise</a>
-      <a href="${pathToPages}/contact.html">contact</a>
+      <a href="${pathToPages}propos.html">à propos</a>
+      <a href="${pathToPages}article.html">articles</a>
+      <a href="${pathToPages}entreprise.html">entreprise</a>
+      <a href="${pathToPages}contact.html">contact</a>
     </div>
   </div>`;
 
