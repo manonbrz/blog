@@ -102,6 +102,9 @@ a:hover {
     margin-left: 0px;
   }
 
+  .nav--open {
+    height: 100%;
+  }
   .navbar--icon {
     margin-left: 20px;
   }

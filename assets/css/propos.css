@@ -32,6 +32,7 @@ section {
 .left {
   display: flex;
   justify-content: center;
+  padding-top: 10%;
   flex-direction: column;
   width: 45%;
   height: 100%;

@@ -73,7 +73,7 @@ h1 {
   padding: 0px 0px 0px 120px;
   font-family: "Oswald", sans-serif;
   font-weight: 100;
-  font-size: 30px;
+  font-size: 1.5rem;
 }
 .offres {
   display: flex;
@@ -258,4 +258,54 @@ h1 {
 
 .copiable i {
   padding-right: 10px ;
+}
+
+@media screen and (max-width : 950px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .offre {
+    width: auto;
+    margin: 2px;
+  }
+
+  .up {
+    flex-direction: column;
+  }
+  .offres {
+    flex-direction: column;
+  }
+
+  .container-text {
+    width: 80%;
+    padding-left: 60px;
+  }
+
+  .container-image {
+    width: 100%;
+    padding-top: 50px;
+    padding-left: 60px;
+  }
+  .container-image iframe {
+    width: 80%;
+  }
+
+  .container-title {
+    padding: 0;
+    width: 100%;
+    margin-left: 60px;
+  }
+
+  .card {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .twocard  {
+    flex-direction: column;
+  }
+  .twocard2 {
+    flex-direction: column;
+  }
 }
