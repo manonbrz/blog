@@ -6,5 +6,5 @@ function copyCode() {
     textArea.select();
     document.execCommand("copy");
     document.body.removeChild(textArea);
-    alert("Numéro copié !");
+    alert("Valeur copié !");
 }
