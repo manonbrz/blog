@@ -283,7 +283,7 @@ h1 {
   }
 
   .container-image {
-    width: 100%;
+    width: auto;
     padding-top: 50px;
     padding-left: 60px;
   }
@@ -293,7 +293,7 @@ h1 {
 
   .container-title {
     padding: 0;
-    width: 100%;
+    width: auto;
     margin-left: 60px;
   }
 
