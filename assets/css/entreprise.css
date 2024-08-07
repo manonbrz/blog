@@ -265,6 +265,9 @@ h1 {
     flex-direction: column;
   }
 
+  .date {
+    width: 80px;
+  }
   .offre {
     width: auto;
     margin: 2px;
