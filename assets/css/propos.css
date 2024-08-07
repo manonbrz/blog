@@ -205,8 +205,12 @@ h2 span {
     flex-direction: column;
   }
   .one {
-    
     height: auto;
+  }
+
+  .three {
+    padding-left: 50px;
+    width: 70%;
   }
 
 }
