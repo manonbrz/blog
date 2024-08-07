@@ -82,3 +82,27 @@ button:hover {
   display: flex;
   justify-content: space-between;
 }
+
+/* Styles pour l'élément copiable */
+.copiable {
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  padding: 5px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.copiable:hover {
+  font-weight: 400;
+}
+
+.copiable .copy-icon {
+  margin-left: 10px;
+  font-size: 1.2em;
+  color: #666;
+}
+
+.copiable i {
+  padding-right: 10px ;
+}
