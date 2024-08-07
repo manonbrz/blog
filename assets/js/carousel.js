@@ -5,9 +5,23 @@ const card = document.querySelectorAll('.card');
 const prevButton = document.querySelector('.prev-button');
 const nextButton = document.querySelector('.next-button');
 
-// Nombre de cartes à afficher à la fois
-const cardWidth = card[0].offsetWidth + 20; // +20 pour tenir compte des marges
-const visibleCards = 3;
+// Fonction pour obtenir la largeur de la carte et le nombre de cartes visibles
+const calculateDimensions = () => {
+  if (window.innerWidth <= 950) {
+    return {
+      cardWidth: card[0].offsetWidth + 10, // +10 pour tenir compte des marges
+      visibleCards: 1,
+    };
+  } else {
+    return {
+      cardWidth: card[0].offsetWidth + 20, // +20 pour tenir compte des marges
+      visibleCards: 3,
+    };
+  }
+};
+
+// Initial dimensions
+let { cardWidth, visibleCards } = calculateDimensions();
 let currentSlide = 0;
 
 // Fonction pour afficher les cartes
@@ -33,6 +47,14 @@ prevButton.addEventListener('click', () => {
     currentSlide = card.length - visibleCards; // Aller à la fin pour l'effet de carousel infini
   }
   showCards();
+});
+
+// Écouter les changements de taille de la fenêtre
+window.addEventListener('resize', () => {
+  const dimensions = calculateDimensions();
+  cardWidth = dimensions.cardWidth;
+  visibleCards = dimensions.visibleCards;
+  showCards(); // Réajuster l'affichage des cartes
 });
 
 // Appel initial de la fonction pour afficher les cartes

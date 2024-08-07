@@ -173,5 +173,20 @@ section {
   cursor: pointer;
 }
 
+@media screen and (max-width : 950px) {
+ 
+    .card {
+      flex: 0 0 100%; 
+      margin: 0 5px; 
+    }
+
+    .nav-buttons {
+      top : 40%;
+    }
+  
+    .cards {
+      transition: transform 0.5s ease-in-out;
+    }
+}
 
 
