@@ -14,6 +14,9 @@ function closePopup() {
     const popup = document.getElementById('popup');
     popup.style.display = 'none';
 }
+const closeBtn = document.querySelector('.close');
+console.log(closeBtn);  // Ajoutez cette ligne pour voir si l'élément est correctement sélectionné
+closeBtn.addEventListener('click', closePopup);
 
 // Ajout des événements pour ouvrir et fermer la popup
 document.addEventListener('DOMContentLoaded', (event) => {
