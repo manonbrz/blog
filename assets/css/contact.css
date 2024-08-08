@@ -103,6 +103,17 @@ button:hover {
   color: #666;
 }
 
+.mailto {
+  color: black;
+  margin: 20px;
+}
+
+.mailto:hover {
+  cursor: pointer;
+  font-weight: bold;
+  color: black;
+}
+
 .copiable i {
   padding-right: 10px ;
 }
